@@ -1,7 +1,7 @@
 # Whole repository is template for new Node.js TypeScript module. Download it and adapt to your needs.
 
 - [About](#about)
-- [Installation](#installation-and-requirements)
+- [Installation & requirements](#installation-and-requirements)
 - [Examples](#examples)
   - [First](#first-example)
   - [Second](#second-example)

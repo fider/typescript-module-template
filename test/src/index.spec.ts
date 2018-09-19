@@ -1,8 +1,5 @@
 import { C } from "../../src";
 
-export function a() {
-    return 1;
-}
 
 describe("index", function() {
 
