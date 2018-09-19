@@ -3,8 +3,8 @@
 - [About](#about)
 - [Installation](#installation-and-requirements)
 - [Examples](#examples)
-  - [Usage](#first-example)
-  - [Mocking](#second-example)
+  - [First](#first-example)
+  - [Second](#second-example)
 - [Documentation](#documentation)
 
 # About
@@ -19,8 +19,16 @@ $ npm install weak-daemon
 ```
 
 # Examples
+
+## First example
 ```js
 import {C} from "TODO";
+console.log(C);
+```
+
+## Second example
+```js
+let {C} = require("TODO");
 console.log(C);
 ```
 
