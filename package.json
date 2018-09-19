@@ -2,7 +2,7 @@
   "name": "TODO",
   "version": "1.0.0",
   "description": "TODO",
-  "main": "./lib/index.js",
+  "main": "./lib/src/index.js",
   "scripts": {
     "build": "npm run lint  &&  tsc",
     "build:publish": "npm run clean && npm run lint && tsc --sourceMap false && rm -rf lib/test",
