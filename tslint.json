@@ -5,7 +5,14 @@
     ],
     "jsRules": {},
     "rules": {
-        "only-arrow-functions": [false, "allow-declarations", "allow-named-functions"]
+        "only-arrow-functions": [false, "allow-declarations", "allow-named-functions"],
+        "no-consecutive-blank-lines": [true, 3],
+        "ordered-imports": false,
+        "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+        "member-access": [true, "no-public"],
+        "one-line": [true, "check-catch", "check-finally", "check-open-brace", "check-whitespace"],
+        "max-line-length": [true, 200],
+        "trailing-comma": false
     },
     "rulesDirectory": []
 }
