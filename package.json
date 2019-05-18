@@ -9,7 +9,7 @@
     "clean": "rm -rf .nyc_output coverage lib",
     "lint": "tslint -p ./tsconfig.json",
     "prepublishOnly": "rm -rf lib/test  &&  npm run build:publish  &&  npm run test",
-    "test": "nyc  -r lcov -e .ts -x \"*.spec.ts\" jasmine-ts JASMINE_CONFIG_PATH=test/jasmine.json",
+    "test": "nyc -r lcov -e .ts -x \"*.spec.ts\" jasmine-ts JASMINE_CONFIG_PATH=test/jasmine.json",
     "__prepare_comment": "Prepare will NOT be executed in case of calling 'npm install --production'",
     "prepare": "npm install tslint typescript -g"
   },

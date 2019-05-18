@@ -1,2 +1,2 @@
-import { Buffer } from "buffer";
-export const C = 1;
+
+export const C = Buffer.from('ab');
