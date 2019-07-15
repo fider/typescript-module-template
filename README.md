@@ -15,27 +15,27 @@ This module provides... TODO
 # Installation and requirements
 Requires [Node.js](https://nodejs.org/) vX.X.X TODO
 ```sh
-$ npm install weak-daemon
+$ npm install TODO-MODULE-NAME
 ```
 
 # Examples
 
 ## First example
 ```js
-import {C} from "TODO";
-console.log(C);
+// js code
 ```
 
 ## Second example
 ```js
-let {C} = require("TODO");
-console.log(C);
+// js code
 ```
 
 # Documentation
 
 ## `module`
-- ### `C` const that should be **always** equal to 1
+- ### `Class` description
+  - #### `Class:method` description
+- ### `Function` description
 
 
 ![image](https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png)
