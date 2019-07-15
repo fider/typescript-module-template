@@ -1,41 +1,38 @@
 {
-  "name": "TODO",
+  "name": "TODO-REPO-NAME",
   "version": "1.0.0",
-  "description": "TODO",
-  "main": "./lib/src/index.js",
+  "description": "TODO-REPO-DESCRIPTION",
+  "main": "./lib/index.js",
   "scripts": {
     "build": "tsc  &&  npm run lint",
-    "build:publish": "npm run clean && npm run lint && tsc --sourceMap false && rm -rf lib/test",
+    "build:clean": "npm run clean && npm run build",
+    "build:publish": "npm run clean && npm run lint && tsc --sourceMap false",
     "clean": "rm -rf .nyc_output coverage lib",
     "lint": "tslint -p ./tsconfig.json",
-    "prepublishOnly": "rm -rf lib/test  &&  npm run build:publish  &&  npm run test",
-    "test": "nyc  -r lcov -e .ts -x \"*.spec.ts\" jasmine-ts JASMINE_CONFIG_PATH=test/jasmine.json",
-    "__prepare_comment": "Prepare will NOT be executed in case of calling 'npm install --production'",
-    "prepare": "npm install tslint typescript -g"
+    "prepublishOnly": "npm run build:publish  &&  npm run test",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TODO_USERNAME/TODO_PROJECT_NAME.git"
+    "url": "TODO-GIT-REPO-GIT+FORMAT"
   },
   "keywords": [
-    "TODO",
-    "TODO"
+    "TODO-NPMJS-KEYWORD"
   ],
-  "author": "TODO",
-  "license": "MIT",
+  "author": "TODO-AUTHOR",
+  "license": "TODO-LICENSE",
   "devDependencies": {
-    "@types/jasmine": "2.5.35",
+    "@types/jest": "24.0.15",
     "@types/node": "10.10.1",
-    "istanbul": "1.1.0-alpha.1",
-    "jasmine": "2.5.2",
-    "jasmine-ts": "0.2.1",
+    "jest": "24.8.0",
     "nyc": "13.0.1",
-    "ts-node": "1.6.0",
-    "tslint": "5.11.0",
-    "typescript": "2.9.2"
+    "ts-jest": "24.0.2",
+    "ts-node": "7.0.1",
+    "tslint": "5.16.0",
+    "typescript": "3.4.5"
   },
   "bugs": {
-    "url": "https://github.com/TODO_USERNAME/TODO_PROJECT_NAME/issues"
+    "url": "TODO-GIT-REPO-GIT+FORMAT/issues"
   },
-  "homepage": "https://github.com/TODO_USERNAME/TODO_PROJECT_NAME#readme"
+  "homepage": "TODO-GIT-REPO-GIT+FORMAT#readme"
 }

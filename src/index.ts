@@ -1,2 +1,3 @@
-import { Buffer } from "buffer";
-export const C = 1;
+export function index() {
+    return 1;
+}
