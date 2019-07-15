@@ -7,7 +7,7 @@
     "build": "tsc  &&  npm run lint",
     "build:clean": "npm run clean && npm run build",
     "build:publish": "npm run clean && npm run lint && tsc --sourceMap false",
-    "clean": "rm -rf .nyc_output coverage lib",
+    "clean": "rm -rf coverage lib",
     "lint": "tslint -p ./tsconfig.json",
     "prepublishOnly": "npm run build:publish  &&  npm run test",
     "test": "jest"
