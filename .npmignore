@@ -1,7 +1,15 @@
 # Ingore antyhing:
 *
 # Except
-!lib/src
+!lib/*
+
+# Ignore map and test files
+lib/*.js.map
+lib/*.test.js
+lib/*.test.js.map
+lib/*.spec.js
+lib/*.spec.js.map
+
 !LICENSE
 !package-lock.json
 !package.json
