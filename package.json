@@ -4,10 +4,8 @@
   "description": "TODO-REPO-DESCRIPTION",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "tsc  &&  npm run lint",
-    "build:clean": "npm run clean && npm run build",
-    "build:publish": "npm run clean && npm run lint && tsc --sourceMap false",
-    "clean": "rm -rf coverage lib",
+    "build": "rimraf lib  &&  tsc",
+    "build:publish": "npm run build  &&  npm run lint  &&  tsc --sourceMap false",
     "lint": "tslint -p ./tsconfig.json",
     "prepublishOnly": "npm run build:publish  &&  npm run test",
     "test": "jest"
@@ -23,13 +21,12 @@
   "license": "TODO-LICENSE",
   "devDependencies": {
     "@types/jest": "24.0.15",
-    "@types/node": "10.10.1",
-    "jest": "24.8.0",
+    "@types/node": "12.12.25",
+    "jest": "25.1.0",
     "nyc": "13.0.1",
-    "ts-jest": "24.0.2",
-    "ts-node": "7.0.1",
-    "tslint": "5.16.0",
-    "typescript": "3.4.5"
+    "ts-jest": "25.0.0",
+    "tslint": "5.20.1",
+    "typescript": "3.7.5"
   },
   "bugs": {
     "url": "TODO-GIT-REPO-GIT+FORMAT/issues"
