@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rimraf lib  &&  tsc",
     "build:publish": "npm run build  &&  npm run lint  &&  tsc --sourceMap false",
-    "lint": "tslint -p ./tsconfig.json",
+    "lint": "tslint -p ./tsconfig.json  &&  tslint ./test/**/*.ts",
     "prepublishOnly": "npm run build:publish  &&  npm run test",
     "test": "jest"
   },
